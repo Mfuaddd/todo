@@ -40,10 +40,9 @@ function loadLi() {
 }
 function saveLi() {
     localStorage.clear()
-    const liArray = list.querySelectorAll("li")
     const p = list.querySelectorAll("p")
     const fullarray = []
-    for (let i = 0; i < liArray.length; i++) {
+    for (let i = 0; i < p.length; i++) {
         fullarray.push([p[i].textContent,p[i].getAttribute("class")])
     }
     localStorage.setItem("liArray",JSON.stringify(fullarray))
