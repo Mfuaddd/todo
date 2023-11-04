@@ -1,0 +1,36 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+.todoBox{
+    border:1px solid black;
+    max-width: 400px;
+}
+.todoHeader{
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+.todoHeader p {
+    text-align: center;
+}
+.todoHeader input {
+    width: 85%;
+}
+.todoHeader button{
+    width: 10%;
+}
+.todoList li{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+.todoList li:nth-child(even){
+    background-color: #DDDDDD;
+}
+.sClose{
+    font-weight: 900;
+    font-size: 16px;
+}
+.line{
+    text-decoration: line-through;
+}
